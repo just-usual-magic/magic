@@ -4,7 +4,9 @@ export default function Submit(){
     return (
         <div className="Submit">
             <div className="centeredContainer">
-                Share your idea<br/>
+            <div className="guideText">
+                    submit
+                </div>
                 <Link to="/"><button className="button">Stuff</button></Link>
                 
             </div>

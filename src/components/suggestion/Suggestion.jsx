@@ -4,7 +4,9 @@ export default function suggestion(){
     return(
         <div class="Suggestion">
             <div className="centeredContainer">
-            suggest<br/>
+            <div className="guideText">
+                    suggest
+                </div>
             <Link to="/"><button className="button">To beginning</button></Link>
             </div>
         </div>

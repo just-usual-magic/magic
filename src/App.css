@@ -16,6 +16,10 @@
   transform: translate(-50%,-50%);
 }
 
+.guideText{
+	margin-bottom: 10px;
+}
+
 .button {
 	display: inline-block;
   margin: 0 10px;
