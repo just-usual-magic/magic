@@ -14,8 +14,8 @@ import {
 export default function App() {
   return (
     <div className="App">
+      <div className="wrapper">
       <Router>
-            <div>
               <Switch>
                 <Route path="/option">
                   <ChooseOption />
@@ -30,8 +30,8 @@ export default function App() {
                   <Welcome />
                 </Route>
               </Switch>
-            </div>
           </Router>
+      </div>
     </div>
   );
 }
