@@ -4,10 +4,12 @@ import './chooseOption.css'
 
 export default function ChooseOption(){
     return (
-        <div className="ChooseOption centerThis">
-            Make your choice<br/>
-            <Link to="submit">Submit sth</Link><br/>
-            <Link to="suggestion">get something to do</Link>
+        <div className="ChooseOption">
+            <div className="centerContainer">
+                Make your choice<br/>
+                <Link to="submit"><button className="button">submit</button></Link>
+                <Link to="suggestion"><button className="button">suggestion</button></Link>
+            </div>
         </div>
     )
 }

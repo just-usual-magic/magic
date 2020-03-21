@@ -11,9 +11,11 @@ import './welcome.css'
 export default function Welcome(){
 
     return(
-        <div className="Welcome centerThis">
-                Hello and welcome, this stuff works like this
-                <Link to="/option">click here</Link>
+        <div className="Welcome">
+            <div className="centeredContainer">
+            Hello and welcome, this stuff works like this<br/>
+                <Link to="/option"><button className="button">click</button></Link>
+            </div>
         </div>
     )
 }
