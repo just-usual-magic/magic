@@ -4,12 +4,10 @@ import Welcome from './components/welcome/Welcome';
 import ChooseOption from './components/chooseOption/ChooseOption';
 import Submit from './components/submit/Submit'
 import Suggestion from './components/suggestion/Suggestion'
-
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 
 
@@ -18,9 +16,6 @@ export default function App() {
     <div className="App">
       <Router>
             <div>
-
-              {/* A <Switch> looks through its children <Route>s and
-                  renders the first one that matches the current URL. */}
               <Switch>
                 <Route path="/option">
                   <ChooseOption />
