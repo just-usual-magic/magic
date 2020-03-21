@@ -14,7 +14,7 @@ import {
 export default function App() {
   return (
     <div className="App">
-      <div className="wrapper">
+      <div className="centeredContainer">
       <Router>
               <Switch>
                 <Route path="/option">

@@ -5,13 +5,13 @@ import './chooseOption.css'
 export default function ChooseOption(){
     return (
         <div className="ChooseOption">
-            <div className="centeredContainer">
                 <div className="guideText">
                         choose
                 </div>
-                <Link to="submit"><button className="button">submit</button></Link>
-                <Link to="suggestion"><button className="button">suggestion</button></Link>
-            </div>
+                <ul className="buttonContainer">
+                    <li><Link to="submit"><button className="button">submit</button></Link></li>
+                    <li><Link to="suggestion"><button className="button">suggestionasd</button></Link></li>
+                </ul>
         </div>
     )
 }
