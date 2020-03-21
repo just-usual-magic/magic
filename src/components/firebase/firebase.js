@@ -16,4 +16,4 @@ class Firebase {
     }
 }
 
-export Firebase
+export default Firebase;

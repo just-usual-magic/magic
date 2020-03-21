@@ -4,7 +4,7 @@ import {
   } from "react-router-dom";
 import './welcome.css'
 
-import Firebase from '../firebase'
+import Firebase from '../firebase/firebase'
 
 export default function Welcome(){
 
