@@ -2,6 +2,7 @@ import * as React from "react";
 import "./App.css";
 import ChooseOption from './components/chooseOption/ChooseOption';
 import Submit from './components/submit/Submit'
+import Thanks from './components/thankYou/Thanks'
 import {
   BrowserRouter as Router,
   Switch,
@@ -23,9 +24,13 @@ export default function App() {
                 <Route path="/submit">
                   <Submit />
                 </Route>
+                <Route path="/thanks">
+                  <Thanks />
+                </Route>
                 <Route path="/">
                   <ChooseOption />
                 </Route>
+                
               </Switch>
           </Router>
       </div>
