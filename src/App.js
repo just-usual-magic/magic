@@ -30,7 +30,6 @@ export default function App() {
                 <Route path="/">
                   <ChooseOption />
                 </Route>
-                
               </Switch>
           </Router>
       </div>
