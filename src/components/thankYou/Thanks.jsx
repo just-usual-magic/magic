@@ -6,7 +6,7 @@ import './thanks.css'
 export default function Thanks(){
     return (
         <div className="Thanks">
-            <div class="guideText">
+            <div className="guideText">
                 <img src={ray} alt="Thank you gif"/>
             </div>
             <ul className="buttonContainer">

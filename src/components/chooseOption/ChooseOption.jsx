@@ -37,7 +37,7 @@ export default class ChooseOption extends React.Component{
     randomSuggestion(){
         if (this.state == undefined){
             let activities = db.ref('actions/');
-            activities.on('value', function (snapshot) {
+            activities.once('value', function (snapshot) {
                     let suggestionList = snapshot.val();
                     console.log(suggestionList)
                     this.setState({
