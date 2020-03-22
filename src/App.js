@@ -17,17 +17,11 @@ export default function App() {
       <div className="centeredContainer">
       <Router>
               <Switch>
-                <Route path="/option">
-                  <ChooseOption />
-                </Route>
                 <Route path="/submit">
                   <Submit />
                 </Route>
-                <Route path="/suggestions">
-                  <Suggestion />
-                </Route>
                 <Route path="/">
-                  <Welcome />
+                  <ChooseOption />
                 </Route>
               </Switch>
           </Router>
