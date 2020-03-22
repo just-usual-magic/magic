@@ -40,6 +40,8 @@ export default class Submit extends React.Component {
     };
 
     submitAction = event => {
+        //CheckCurrentInput()
+        if(this.state.text.length == 0 || this.state.description.length == 0){return ;}
         let action = {
             title : this.state.text,
             description : this.state.description

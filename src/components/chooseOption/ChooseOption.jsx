@@ -15,9 +15,9 @@ export default class ChooseOption extends React.Component{
             return (
                 <div className="ChooseOption">
                         <div className="guideText">
-                        <p className="activityTitle">{this.state.suggestion.title}</p>
-                            <p className="activityTitle">_______________</p>
-                        <p className="activityDescription">{this.state.suggestion.description}</p>
+                            <p className="activityTitle">{this.state.suggestion.title}</p>
+                            <div class="line"></div>
+                            <p className="activityDescription">{this.state.suggestion.description}</p>
                         </div>
                         <ul className="buttonContainer">
                             <li><Link to="submit"><button className="button">contribute ideas</button></Link></li>
