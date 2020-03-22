@@ -1,48 +1,48 @@
-import React from 'react';
-import {Link} from 'react-router-dom'
-import {db} from '../firebase/firebase'
+// import React from 'react';
+// import {Link} from 'react-router-dom'
+// import {db} from '../firebase/firebase'
 
-export default class Suggestion extends React.Component{
-    constructor(props) {
-        super(props);
-    }
+// export default class Suggestion extends React.Component{
+//     constructor(props) {
+//         super(props);
+//     }
 
-    componentDidMount() {
-        this.randomSuggestion();
-    }
+//     componentDidMount() {
+//         this.randomSuggestion();
+//     }
 
-    render() {
-        console.log(this.state)
-        if (this.state != undefined) {
-            return (
-                <div className="Suggestion">
-                    <div className="guideText">
-                        {this.state.suggestion.title}
-                    </div>
-                    <ul className="buttonContainer">
-                    </ul>
-                </div>
-            )
-        } else {
-            return (
-                <div className="Suggestion">
-                    <div className="guideText">
+//     render() {
+//         console.log(this.state)
+//         if (this.state != undefined) {
+//             return (
+//                 <div className="Suggestion">
+//                     <div className="guideText">
+//                         {this.state.suggestion.title}
+//                     </div>
+//                     <ul className="buttonContainer">
+//                     </ul>
+//                 </div>
+//             )
+//         } else {
+//             return (
+//                 <div className="Suggestion">
+//                     <div className="guideText">
 
-                    </div>
-                    <ul className="buttonContainer">
-                    </ul>
-                </div>);
-        }
-    }
+//                     </div>
+//                     <ul className="buttonContainer">
+//                     </ul>
+//                 </div>);
+//         }
+//     }
 
-    randomSuggestion(){
-        let activities = db.ref('actions/');
-        activities.on('value', function (snapshot) {
-            let suggestionList = snapshot.val();
-            console.log(suggestionList)
-            this.setState({
-                suggestion: suggestionList[Math.floor(Math.random() * suggestionList.length)]
-            });
-        }.bind(this));
-    }
-}
+//     randomSuggestion(){
+//         let activities = db.ref('actions/');
+//         activities.on('value', function (snapshot) {
+//             let suggestionList = snapshot.val();
+//             console.log(suggestionList)
+//             this.setState({
+//                 suggestion: suggestionList[Math.floor(Math.random() * suggestionList.length)]
+//             });
+//         }.bind(this));
+//     }
+// }
