@@ -38,6 +38,11 @@ li{
   backface-visibility: hidden;
 }
 
+h1{
+	font-size: 30px;
+	margin-top: 30px;
+}
+
 .centeredContainer{
 	display:flex;
   	position: absolute;

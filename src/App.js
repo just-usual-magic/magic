@@ -12,6 +12,11 @@ import {
 export default function App() {
   return (
     <div className="App">
+      <div class="heading">
+        <h1>Corona</h1>
+        <h2>Nice things you can do during shutdown</h2>
+      </div>
+      
       <div className="centeredContainer">
       <Router>
               <Switch>
