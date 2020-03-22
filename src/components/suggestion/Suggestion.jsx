@@ -20,9 +20,6 @@ export default class Suggestion extends React.Component{
                         {this.state.suggestion.title}
                     </div>
                     <ul className="buttonContainer">
-                        <li><Link to="/">
-                            <button className="button">To beginning</button>
-                        </Link></li>
                     </ul>
                 </div>
             )
@@ -33,9 +30,6 @@ export default class Suggestion extends React.Component{
 
                     </div>
                     <ul className="buttonContainer">
-                        <li><Link to="/">
-                            <button className="button">To beginning</button>
-                        </Link></li>
                     </ul>
                 </div>);
         }
