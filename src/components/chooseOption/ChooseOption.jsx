@@ -9,7 +9,7 @@ export default function ChooseOption(){
                         choose
                 </div>
                 <ul className="buttonContainer">
-                    <li><Link to="submit"><button className="button">submit</button></Link></li>
+                    <li><Link to="submit"><button className="button">contribute ideas</button></Link></li>
                     <li><button className="button">new suggestion</button></li>
                 </ul>
         </div>

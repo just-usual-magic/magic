@@ -7,7 +7,7 @@ export default function Submit(){
                     submit
                 </div>
                 <ul className="buttonContainer">
-                    <li><Link to="/"><button className="button">Stuff</button></Link>  </li>
+                    <li><Link to="/"><button className="button">submit your idea</button></Link></li>
                 </ul>
         </div>
     )
