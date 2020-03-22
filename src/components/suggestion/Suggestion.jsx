@@ -2,27 +2,45 @@ import React from 'react';
 import {Link} from 'react-router-dom'
 import {db} from '../firebase/firebase'
 
-export default function suggestion(){
-    suggestion = randomSuggestion()
-    console.log(suggestion)
-    return(
-        <div className="Suggestion">
-            <div className="guideText">
-                    {suggestion.Title}
-            </div>
+export default class Suggestion extends React.Component{
+    constructor(props) {
+        super(props);
+        this.state = {
+            suggestion : {
+                Title : "empty"
+            },
+        }
+        this.randomSuggestion()
+    }
+
+    componentDidMount(){
+n
+    }
+
+
+    render() {
+        console.log("Rendering")
+        console.log(this.state)
+        return(
+            <div className="Suggestion">
+                <div className="guideText">
+                    {this.state.suggestion.Title}
+                </div>
                 <ul className="buttonContainer">
                     <li><Link to="/"><button className="button">To beginning</button></Link></li>
                 </ul>
-        </div>
-    )
-}
+            </div>
+        )
+    }
 
-function randomSuggestion(){
-    let suggestions = []
-    let activities = db.ref('activities/');
-    activities.on('value', function(snapshot){
-        suggestions.push(snapshot.val());
-    });
-    console.log(suggestions)
-    return suggestions[~~(suggestions.length * Math.random())]
+    randomSuggestion(){
+        let activities = db.ref('activities/');
+        activities.on('value', function(snapshot){
+            let suggestionList = snapshot.val();
+            console.log(suggestionList);
+            this.setState({
+                suggestion : suggestionList["10pushups"]
+            });
+        }.bind(this));
+    }
 }
