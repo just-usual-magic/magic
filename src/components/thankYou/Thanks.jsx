@@ -10,7 +10,7 @@ export default function Thanks(){
                 <img src={ray} alt="Thank you gif"/>
             </div>
             <ul className="buttonContainer">
-                    <li><Link to="/"><button className="button">To beginning</button></Link></li>
+                    <li><Link to="/"><button className="button">to beginning</button></Link></li>
             </ul>
         </div>
     )
