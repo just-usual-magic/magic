@@ -4,14 +4,8 @@ import {
   } from "react-router-dom";
 import './welcome.css'
 
-import Firebase from '../firebase/firebase'
-
 export default function Welcome(){
 
-    var actions = Firebase.db.ref('actions/');
-    actions.on('value', function(snapshot){
-       console.log(snapshot.val()); 
-    });
     return(
         <div className="Welcome">
                 <div className="guideText">

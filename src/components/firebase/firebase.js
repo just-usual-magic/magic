@@ -1,19 +1,12 @@
-import app from 'firebase/app';
-import 'firebase/database';
+import Firebase from 'firebase'
 
 const config = {
   apiKey: process.env.REACT_APP_API_KEY,
-  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
   databaseURL: process.env.REACT_APP_DATABASE_URL,
   projectId: process.env.REACT_APP_PROJECT_ID,
 };
 
-class Firebase {
-    constructor() {
-        app.initializeApp(config);
-        this.auth = app.auth();
-        this.db = app.database();
-    }
-}
+const firebaseApp = Firebase.initializeApp(config)
 
-export default Firebase;
+// Export the database for components to use.
+export const db = firebaseApp.database()
