@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07f1cc51-a1ea-4b3c-8ca8-960019eeb07d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/suggestion/Suggestion.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/suggestion/Suggestion.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/chooseOption/ChooseOption.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/chooseOption/ChooseOption.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,5 +82,9 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="431" y="174" key="MultipleFileMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1584870461588" />
+    <state x="375" y="214" width="689" height="472" key="find.popup" timestamp="1584895238530">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="375" y="214" width="689" height="472" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1584895238530" />
   </component>
 </project>

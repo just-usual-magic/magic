@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import './chooseOption.css'
 import {db} from '../firebase/firebase'
@@ -16,6 +16,7 @@ export default class ChooseOption extends React.Component{
                 <div className="ChooseOption">
                         <div className="guideText">
                         <p className="activityTitle">{this.state.suggestion.title}</p>
+                            <p className="activityTitle">_______________</p>
                         <p className="activityDescription">{this.state.suggestion.description}</p>
                         </div>
                         <ul className="buttonContainer">
