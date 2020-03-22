@@ -1,0 +1,28 @@
+{
+    "actions" : [
+        {
+            "title" : "Do 10 push-ups",
+            "description" : "Sport is good for your body and mind. Standing up and doing push-ups during the day will definitely improve your mood!"
+        },
+        {
+            "title" : "Become part of a twitch community",
+            "description" : "Go to twitch.com and find like-minded people!"
+        },
+        {
+            "title" : "Learn a to cook a new dish",
+            "description" : "For example, chefkoch.de offers a wide variety of dishes to try out during lockdown."
+        },
+        {
+            "title" : "Dance",
+            "description" : "Maybe? Only if you wanna"
+        },
+        {
+            "title" : "Try some free games, e.g. osu!",
+            "description" : "Check it out on https://osu.ppy.sh/home. This nice rhythmical game will distract you from the daily routine."
+        },
+        {
+            "title" : "Call your mother/father/grandfather/aunt/dog",
+            "description" : "They are worried about you."
+        }
+    ]
+}
