@@ -78,6 +78,10 @@ li{
 	font-size: 1em;
 }
 
+button:focus{
+	outline:none;
+}
+
 @keyframes comeup{
 	0%{
 		opacity: 0;
