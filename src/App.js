@@ -23,7 +23,7 @@ export default function App() {
                 <Route path="/submit">
                   <Submit />
                 </Route>
-                <Route path="/suggestion">
+                <Route path="/suggestions">
                   <Suggestion />
                 </Route>
                 <Route path="/">
